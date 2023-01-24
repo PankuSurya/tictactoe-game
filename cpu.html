@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="quit.html">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>TicTacToe</li>
+        </ul>
+    </nav>
+    <div class="gameContainer">
+        <div class="leftContainer">
+            <h1>Welcome to TicTacToe</h1>
+            <div class="formOut">
+                <div class="formContainer">
+                    <p>Player X : </p>
+                    <input placeholder="Enter Player X Name" id="playerX" >
+                </div>
+                <div class="formContainer">
+                    <p>Player O : </p>
+                    <input placeholder="Enter Player O Name"
+                    id="playerO" value = "CPU">
+                </div>
+                <div class="playBtn">
+                    <button onclick="computerPlay(), window.location.reload()">Play</button>
+                    <button onclick="window.location.href = '/index.html'">2 Player</button>
+                </div>
+            </div>
+            <div class="scoreboard">
+                <p class="score">Player X - 4</p>
+                <p class="score">Player O - 5</p>
+            </div>
+            <div class="playBtn"><button onclick="window.location.href='/index.html'">Quit</button></div>
+        </div>
+        <div class="rightContainer">
+            <div class="displayContainer">
+                <h1 id="playerText">Player Turn X</h1>
+                <button class="btn" id="restartBtn" onclick="window.location.href='/cpu.html'">Restart</button>
+            </div>
+            <div class="container">
+                <div class="box" id="box0" onclick="boxClick('box0')"></div>
+                <div class="box" id="box1" onclick="boxClick('box1')"></div>
+                <div class="box" id="box2" onclick="boxClick('box2')"></div>
+                <div class="box" id="box3" onclick="boxClick('box3')"></div>
+                <div class="box" id="box4" onclick="boxClick('box4')"></div>
+                <div class="box" id="box5" onclick="boxClick('box5')"></div>
+                <div class="box" id="box6" onclick="boxClick('box6')"></div>
+                <div class="box" id="box7" onclick="boxClick('box7')"></div>
+                <div class="box" id="box8" onclick="boxClick('box8')"></div>
+            </div>
+        </div>
+    </div>
+    <script src="cpu.js"></script>
+</body>
+</html>

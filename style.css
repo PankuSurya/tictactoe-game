@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Serif', serif;
+}
+
+nav {
+    background-color: dodgerblue;
+    color: aliceblue;
+    height: 10vh;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+.gameContainer {
+    /* background-color: honeydew; */
+    background: linear-gradient(#e66465, #9198e5);
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    /* margin-top: 30px; */
+}
+
+.leftContainer {
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formOut {
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 26vw;
+    align-items: center;
+    margin: 10px;
+}
+
+.playBtn button {
+    padding: 12px 24px;
+    border-radius: 50px;
+    background-color: plum;
+    color: blueviolet;
+    font-size: larger;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.formContainer {
+    margin: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer input {
+    background-color: silver;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 7px;
+}
+
+.rightContainer {
+    width: 60vw;
+}
+
+.displayContainer {
+    display: flex;
+    height: 16vh;
+    font-size: xx-large;
+    justify-content: space-between;
+}
+
+.btn {
+    height: 10vh;
+    padding: 10px 12px;
+    margin: 10px;
+    cursor: pointer;
+    /* border: none; */
+    border-radius: 20px;
+    font-size: x-large;
+    background-color: navajowhite;
+    color: midnightblue;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 16vw);
+    grid-template-rows: repeat(3, 22vh);
+    justify-content: center;
+}
+
+.box {
+    border: 2px solid paleturquoise;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box :hover {
+    background:darkseagreen;
+}
+
+.scoreboard {
+    display: flex;
+    /* flex-direction: column; */
+    margin-top: 25px;
+}
+
+.score {
+    padding: 20px;
+    background-color: aliceblue;
+    margin: 8px;
+    border-radius: 30px;
+    font-size: medium;
+}
